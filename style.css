@@ -489,3 +489,34 @@ height: 70px;
     transition: 0.3s;
     background: rgb(42, 43, 47);
 }
+
+
+
+
+@media (max-width: 1200px) {
+    .woman-side, .man-side {
+        display: none; /* Бокові фото зникають на користь основного контенту */
+    }
+    .nav {
+        padding: 0 20px;
+    }
+}
+
+/* Для стандартних планшетів */
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
